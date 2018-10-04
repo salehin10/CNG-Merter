@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fffb81">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="BDT  :  "
+                android:textSize="25dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="100dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 40 tk"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/fareText"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fare"
+
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/fareId" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fdfdfe">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance(M)"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:alpha=".5" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:text="0.0"
+                android:clickable="false"
+                android:id="@+id/distanceId" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fcfbfe">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waiting(minute)"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:alpha=".5"
+                android:id="@+id/waitingBox" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:text="0.0"
+                android:clickable="false"
+                android:id="@+id/timeBox" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First 2 km is 40 tk  "
+                android:id="@+id/checkBox"
+                android:allowUndo="false"
+                android:checked="true"
+                android:clickable="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next per km is 12 tk "
+                android:id="@+id/checkBox2"
+                android:enabled="true"
+                android:checked="true" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waiting charge per minute 2 tk"
+                android:id="@+id/checkBox3"
+                android:checked="true" />
+            />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
